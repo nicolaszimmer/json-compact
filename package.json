@@ -1,6 +1,6 @@
 {
   "name": "json-compact",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a downsized json file from tabular data, ie [{...},{...}] Optimized for GPT/LLM processing.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
