@@ -5,7 +5,8 @@ interface DataObject {
 const JSONcompact = {
   compact(
     data: DataObject[] | string,
-    description?: string
+    description?: string,
+    roundToDecimalPlaces?: number
   ): { description: string; columns: string[]; rows: (number | null)[][] } {
     let dataArray: DataObject[];
 
@@ -38,8 +39,12 @@ const JSONcompact = {
     const rows = dataArray.map((obj) =>
       columns.map((key) => {
         let value = obj[key] ?? null;
-        if (typeof value === "number" && Number.isFinite(value)) {
-          value = parseFloat(value.toFixed(1));
+        if (
+          typeof roundToDecimalPlaces === "number" &&
+          typeof value === "number" &&
+          Number.isFinite(value)
+        ) {
+          value = parseFloat(value.toFixed(roundToDecimalPlaces));
         }
         return value;
       })
@@ -47,8 +52,16 @@ const JSONcompact = {
 
     return { description: description ?? defaultDescription, columns, rows };
   },
-  compactedJSON(data: DataObject[] | string, description?: string): string {
-    const compacted = JSONcompact.compact(data, description);
+  compactedJSON(
+    data: DataObject[] | string,
+    description?: string,
+    roundToDecimalPlaces?: number
+  ): string {
+    const compacted = JSONcompact.compact(
+      data,
+      description,
+      roundToDecimalPlaces
+    );
     return JSON.stringify(compacted);
   },
   expand(
