@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "outDir": "./lib", // compiled output directory
+      "declaration": true, // generate .d.ts files
+      "declarationMap": true, // create sourcemaps for .d.ts files
+      "sourceMap": true, // create source map files for debugging
+      "rootDir": "./src", // source files directory
+      "module": "commonjs", // module system
+      "target": "es2016" // output like ES5 (compatible with older browsers)
+    },
+    "include": ["src/**/*"], // include all files in src
+    "exclude": ["node_modules", "lib"] // exclude these directories
+  }
