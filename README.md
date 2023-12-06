@@ -87,7 +87,3 @@ Contributions are welcome! Please feel free to submit a pull request or open iss
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-This updated README reflects the changes to the `compact` function and provides clear instructions on how to use the new optional rounding feature.
