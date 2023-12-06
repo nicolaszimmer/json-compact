@@ -2,7 +2,7 @@
 
 ## Overview
 
-JSONcompact is a TypeScript/JavaScript library designed to convert complex JSON data into a compact, tabular format suitable for processing and analysis, particularly with AI models like GPT-3 and GPT-4. It also provides functionality to revert this compacted data back to its original form. The library is useful in scenarios where you need to minimize JSON size without losing the essence and structure of the data.
+JSONcompact is a TypeScript/JavaScript library designed to convert complex JSON data into a compact, tabular format suitable for processing and analysis, particularly with AI models like GPT-3 and GPT-4. It also provides functionality to revert this compacted data back to its original form. The library is useful in scenarios where you need to minimize JSON size without losing the essence and structure of the data. **You can expect a reduction in token size of >30% for larger data sets**
 
 ## Features
 
