@@ -16,7 +16,7 @@ JSONcompact is a TypeScript/JavaScript library designed to convert complex JSON 
 ## Installation
 
 ```bash
-npm install jsoncompact
+npm install json-compact
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ npm install jsoncompact
 ### Importing the Library
 
 ```javascript
-import JSONcompact from 'jsoncompact';
+import JSONcompact from 'json-compact';
 ```
 
 ### Compacting JSON Data
