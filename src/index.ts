@@ -25,7 +25,7 @@ const JSONcompact = {
     }
 
     const defaultDescription =
-      "This table's 'columns' list field names, and 'rows' are arrays of corresponding values in the same sequential order.";
+      "This table's 'columns' list field names, and 'rows' are arrays of corresponding values in the same sequential order. 'null' represents missing data. All numerical fields should be provided as numbers, not strings. Ensure full dataset is included for each separate request to maintain data continuity.";
 
     const columns: string[] = [];
     dataArray.forEach((obj) => {
